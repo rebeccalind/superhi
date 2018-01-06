@@ -4,15 +4,19 @@ html {
 }
 
 body { 
-    background-color: lightgrey;
+    background-color: black;
     margin: 0 auto;
     width: 100%;
     height: 100%;
     align-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
+    width: 100%;
     position: absolute;
+    top: 33%;
 }
 
 .title {
@@ -21,7 +25,19 @@ body {
     text-align: center;
     color: transparent;
     font-size: 100px;
-    background: url("https://www-tc.pbs.org/wgbh/nova/next/wp-content/uploads/2017/06/quantum-entanglement_2048x1152.jpg") no-repeat;
-    background-position: 1% 1%;
+    background: url("https://specials-images.forbesimg.com/dam/imageserve/765877054/960x0.jpg?fit=scale") repeat;
+    background-position: 40% 50%;
     -webkit-background-clip: text;
+    line-height: 0.8;
+}
+
+.subtitle {
+    color: rgb(150,150,150);
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    
 }
