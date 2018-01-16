@@ -1,0 +1,157 @@
+body {
+  font-family: 'LunchType-Regular', san-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+}
+
+.section-pad {
+  padding-left: 5vw;
+  padding-right:  5vw;
+}
+
+.container {
+  max-width: 810px;
+  margin: auto;
+}
+
+.intro {
+  background-image: url('intro.jpg');
+  color: #fff;
+  background-color: #111;
+}
+
+.intro p {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 112px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.bg-cover {
+  background-size:  cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+}
+
+@keyframes fadeIn {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  50% {
+    transform: translate(0);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+.appear {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.marquee {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  font-size: 5vw;
+  line-height: 1;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3000vw);
+  }
+}
+
+.marquee span {
+  animation: moveLeft 200s infinite;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+
+.day-1 {
+  background-color: #FD7687;
+}
+
+.day-2 {
+  background-color: #1BB190;
+}
+
+.day-3 {
+  background-image: url(day-3.jpg);
+}
+
+.lineup {
+  text-align: center;
+}
+
+.date {
+  font-size: 28px;
+  color: #FFEECF;
+  margin-bottom: 48px;
+  line-height: 1;
+  text-align: center;
+}
+
+.lineup h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p {
+  font-size: 21px;
+}
+
+.lineup li {
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
