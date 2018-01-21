@@ -101,6 +101,15 @@ body {
   position: relative;
 }
 
+.day {
+  position: relative;
+}
+
+.day .container {
+  position: relative;
+  z-index: 2;
+}
+
 .day-1 {
   background-color: #FD7687;
 }
