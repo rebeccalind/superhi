@@ -103,6 +103,7 @@ body {
 
 .day {
   position: relative;
+  overflow:  hidden;
 }
 
 .day .container {
