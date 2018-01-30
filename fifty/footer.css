@@ -1,0 +1,107 @@
+.flex-column {
+  flex-direction: column;
+}
+
+.register {
+  min-height: 65vh;
+  display: flex;
+  background-color: #FFEED1;
+}
+
+.footer {
+  min-height: 35vh;
+  display: flex;
+  background-color: #111118;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 87px;
+  margin-bottom: 24px;
+}
+
+.button {
+  border: solid 2px #FFEED1;
+	color: #FFEED1;
+  line-height: 1;
+  padding: 6px 12px;
+  min-width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register .container {
+  display: flex;
+}
+
+.register h2 {
+  font-size: 40px;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #00B290;
+  padding-bottom: 12px;
+}
+
+input {
+	background: none;
+  border: none;
+  font-size: 21px;
+  outline: none;
+}
+
+.email-input {
+  flex: 1;
+}
+
+.submit {
+}
+
+.form {
+  margin: 48px 24px;
+  
+}
+
+.eyes {
+  width: 108px;
+  height: 32px;
+  background-image: url(eyes_open.svg);
+}
+
+.hand {
+  width: 57px;
+  height: 89px;
+  background-image: url(ok_hand.svg);
+  align-self: flex-end;
+}
+
+.eyes,
+.hand {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 780px) {
+  
+  .register .container {
+    flex-direction: column;
+  }
+  
+  .register h2 {
+    font-size: 30px;
+  }
+  
+  .form {
+    margin: 24px 0;
+  }
+  
+}
+
+
+
+
+
