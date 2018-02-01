@@ -36,6 +36,8 @@ circles.forEach((circle, index) => {
   
 })
 
+// animation squiggles
+
 const squiggles = document.querySelectorAll('.squiggle')
 
 squiggles.forEach((squiggle, index) => {
@@ -54,6 +56,57 @@ squiggles.forEach((squiggle, index) => {
   })
   
 })
+
+// animation sections
+
+inView('.section')
+	.on('enter', section => {
+  			section.classList.add('in-viewport')
+      })
+	.on('exit', section => {
+  			section.classList.remove('in-viewport')
+})
+
+inView.threshold(0.2)
+
+const sections = document.querySelectorAll('.section')
+
+sections.forEach((section, index) => {
+  const artists = section.querySelectorAll('.lineup li')
+  const shapes = section.querySelectorAll('.shape')
+  
+  artists.forEach((artist, index) => {
+    const delay = index * 100
+    artist.style.transitionDelay = delay + 'ms'
+  })
+  
+  shapes.forEach((shape, index) => {
+    const delay = (artists.length + index) * 100
+    shape.style.transitionDelay = delay + 'ms'
+  })
+})
+
+// smooth scroll with down arrow buttons
+
+const scrollLinks = document.querySelectorAll('.js-scroll')
+
+scrollLinks.forEach(link => {
+	
+	// addEventListener is jQuery's .on()
+  link.addEventListener('click', (event) => { 
+    // preventDefault is jQuery's return false
+    event.preventDefault()
+		
+    const href = link.getAttribute('href')
+    console.log(href)
+    document.querySelector(href).scrollIntoView({ 
+      behavior: 'smooth' 
+    })
+
+  })
+  
+})
+
 
 // TRADITIONAL JS
 // var doSometing = function(foo) {}
