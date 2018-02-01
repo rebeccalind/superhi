@@ -149,8 +149,51 @@ body {
   margin-bottom: 24px;
 }
 
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3vh;
+  width: 64px;
+  height: 32px;
+  background-image: url(down-arrow.svg);
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position: center;
+}
 
+.scroll-to-intro {
+  background-image: url(down-arrow-light.svg);
+}
 
+@media (max-width: 640px) {
+  
+  .marquee {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90vw;
+    margin-bottom: 24px;
+  }
+  
+  .logo {
+    max-width: 64px;
+    margin-bottom: 24px;
+  }
+  
+  .intro p {
+    font-size: 20px;
+  }
+  
+  .scroll-to {
+    display: none;
+  }
+  
+  .lineup h2 {
+    font-size: 30px;
+  }
+  
+}
 
 
 
