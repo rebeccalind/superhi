@@ -1,0 +1,58 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 5vh 3vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+/* space-between to spread evenly over full page */
+  justify-content: space-between;
+}
+
+.top,
+.middle,
+.indicators {
+  text-align: center;
+  position: relative;
+}
+
+/* the submit box */
+input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  text-align: center;
+  color: white;
+}
+
+.search-input {
+  font-size: 72px;
+}
+
+.search-input::placeholder {
+  color: #323232;
+}
+  
+.search-clear, 
+.spinner {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+/*   no cursor when not visible */
+  pointer-events: none;
+}
+
+.search-clear {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
