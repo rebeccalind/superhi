@@ -50,6 +50,41 @@ input {
   cursor: pointer;
 }
 
+.videos,
+.middle,
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.video {
+  grid-area: 1/1;
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+}
+
+.search-input,
+.videos,
+.full-area {
+  grid-area: 1/1;
+}
+
+.search-hint,
+.spinner {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-hint .search-hint,
+.loading .spinner {
+  opacity: 1;
+}
+
+.loading .search {
+  opacity: 0;
+}
+
 
 
 
