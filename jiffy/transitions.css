@@ -1,0 +1,35 @@
+.video {
+  opacity: 0;
+  transform: scale(0) rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+/* when we add the visible class it will
+make our video element scale up */
+.visible {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+.video {
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.68);
+}
+
+/* slightly tilted gifs */
+.visible:nth-of-type(2n) {
+  transform: scale(1) rotate(5deg);
+}
+
+.visible:nth-of-type(3n) {
+  transform: scale(1) rotate(-5deg);
+}
+
+.visible:nth-of-type(4n) {
+  transform: scale(1) rotate(7deg);
+}
+
+
+
+
+
+

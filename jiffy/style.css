@@ -27,7 +27,7 @@ input {
   padding: 0;
   outline: none;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 .search-input {
@@ -38,16 +38,21 @@ input {
   color: #323232;
 }
   
-.search-clear, 
+.search-clear,
 .spinner {
   transition: opacity 0.5s ease;
   opacity: 0;
-/*   no cursor when not visible */
-  pointer-events: none;
 }
 
 .search-clear {
   cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
 }
 
 .videos,
@@ -77,14 +82,50 @@ input {
 }
 
 .show-hint .search-hint,
-.loading .spinner {
+.loading .spinner,
+.has-results .search-clear {
   opacity: 1;
 }
 
-.loading .search {
+.loading .search-hint,
+.has-results .title {
   opacity: 0;
 }
 
+.title {
+  transition: opacity 0.5s ease;
+}
+
+
+/* RESPONSIVE */
+
+.video {
+  width: 100%;
+}
+
+.videos {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.search-input {
+  width: 94vw;
+  line-height: 1;
+  height: 88px;
+}
+
+@media (max-width: 480px) {
+  
+  body {
+    font-size: 18px;
+  }
+  
+  .search-input {
+    font-size: 32px;
+  }
+  
+}
 
 
 
